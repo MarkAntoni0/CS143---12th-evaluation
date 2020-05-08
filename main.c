@@ -31,11 +31,13 @@ void MatrixFiller(Employee *dataMatrix, int employeesCount){
 }
 //=======================================================================================================================================//
 void MatrixViewer(Employee *dataMatrix, int employeesCount){
+    printf("-------------------------\n");
     printf("Index|     ID|    Salary|\n");
+    printf("-------------------------\n");
     for (int i=0; i<employeesCount; i++) {
         printf("%5d|\t%5d|\t%8.2f|\n",i+1,dataMatrix[i].ID,dataMatrix[i].Salary);
     }
-    printf("========================================================\n");
+    printf("-------------------------\n");
 }
 //=======================================================================================================================================//
 void MatrixAdd(Employee *dataMatrix, int *employeesCount){
